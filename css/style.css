@@ -53,7 +53,7 @@ header {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 33px;
     line-height: 39px;
     color: #F9F9F9;
 }
@@ -85,6 +85,7 @@ header {
 }
 
 .paragrafo-frete{
+    text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -96,82 +97,16 @@ header {
 
 /*** SEÇÃO 03 DO PROJETO ***/
 
-.container{
+.container, .container1{
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
 }
 
-.imagem1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 302px;  
-    background: #EBE9EA;
-}
-
-.imagem2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 302px;  
-    background: #EBE9EA;
-}
-
-.imagem3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 302px;  
-    background: #EBE9EA;
-}
-
-.imagem4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 302px;  
-    background: #EBE9EA;
-}
-
-.container1{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px;
-}
-
-.imagem5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 302px;  
-    background: #EBE9EA;
-}
-
-.imagem6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 302px;  
-    background: #EBE9EA;
-}
-
-.imagem7{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 302px;  
-    background: #EBE9EA;
-}
-
-.imagem8{
+.imagem1, .imagem2,
+    .imagem3, .imagem4,
+    .imagem5, .imagem6,
+    .imagem7, .imagem8{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +121,8 @@ img{
 }
 
 footer{
-    height: 25px;
+    padding: 15px;
+    height: 50px;
     text-align: center;
     background: #181818;
     font-family: 'Montserrat';      
@@ -194,4 +130,30 @@ footer{
     font-weight: 500;
     font-size: 18px;
     color: #F9F9F9;
+}
+
+@media (max-width: 968px){
+    .imagem{
+        background: url(../images/Mask\ Group\ Mobile.svg) no-repeat;
+        background-size: cover;
+        padding: 50px;
+    }
+
+}
+
+@media (max-width: 1350px){
+    .container, .container1{
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 29px;
+    }
+
+    .imagem1, .imagem2,
+    .imagem3, .imagem4,
+    .imagem5, .imagem6,
+    .imagem7, .imagem8 {
+        width: 500px;
+        border-radius: 10px;
+    }
 }
