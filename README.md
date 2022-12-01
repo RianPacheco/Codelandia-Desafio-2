@@ -15,6 +15,7 @@
 ## Preview Mobile 📱
 
 <img src="./assets/img/Preview-Mobile.PNG">
+<img src="./assets/img/Preview-Mobile(2).PNG">
 
 # Tecnologias utilizadas 🌐
 
